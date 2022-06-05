@@ -5,11 +5,8 @@ public class Atividade6 {
     public static void main(String[] args) {
         preencherMatrizPrincipal();
         mostrarMatriz(matrizPrincipal);
-        // System.out.println("trocando linha 2 por linha 8");
         trocaLinha2PorLinha8();
-        // System.out.println("trocando coluna 4 por coluna 10");
         trocaColuna4PorColuna10();
-        // mostrarColunaXLinhaMatriz(matrizPrincipal, 4, 'l');
         trocaDiagonalPrincipalComDiagonalSecundaria();
         trocaLinha5ComColuna10();
     }
@@ -45,6 +42,8 @@ public class Atividade6 {
             }
             System.out.println();
         }
+        // Criei esta função para identificar o erro que está dando na minha letra "A", quando se comenta o 
+        // procedimento da linha "A" os outros param de conflitar e funcionam numa boa.
     }
 
     public static void trocaLinha2PorLinha8() {
@@ -85,11 +84,11 @@ public class Atividade6 {
 
     public static void trocaLinha5ComColuna10() {
         int[][] matrizTroca = matrizPrincipal.clone();
-        int vetorDeControle;
+        int variavelDecontrole;
         for (int y = 0; y < matrizPrincipal.length; y++) {
-            vetorDeControle = matrizPrincipal[4][y];
+            variavelDecontrole = matrizPrincipal[4][y];
             matrizTroca[4][y] = matrizTroca[y][9];
-            matrizTroca[y][9] = vetorDeControle;
+            matrizTroca[y][9] = variavelDecontrole;
         }
         mostrarMatriz(matrizTroca);
     }
