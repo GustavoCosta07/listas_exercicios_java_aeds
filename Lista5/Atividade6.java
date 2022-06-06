@@ -91,5 +91,6 @@ public class Atividade6 {
             matrizTroca[y][9] = variavelDecontrole;
         }
         mostrarMatriz(matrizTroca);
+        System.out.println("ola julia");
     }
 }
