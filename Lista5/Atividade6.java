@@ -9,6 +9,7 @@ public class Atividade6 {
         trocaColuna4PorColuna10();
         trocaDiagonalPrincipalComDiagonalSecundaria();
         trocaLinha5ComColuna10();
+        System.out.println("ola julia");
     }
 
     private static void preencherMatrizPrincipal() {
@@ -91,6 +92,6 @@ public class Atividade6 {
             matrizTroca[y][9] = variavelDecontrole;
         }
         mostrarMatriz(matrizTroca);
-        System.out.println("ola julia");
+        
     }
 }
