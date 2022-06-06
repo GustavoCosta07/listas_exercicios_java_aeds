@@ -9,7 +9,6 @@ public class Atividade6 {
         trocaColuna4PorColuna10();
         trocaDiagonalPrincipalComDiagonalSecundaria();
         trocaLinha5ComColuna10();
-        System.out.println("ola julia 2"); 
     }
 
     private static void preencherMatrizPrincipal() {
