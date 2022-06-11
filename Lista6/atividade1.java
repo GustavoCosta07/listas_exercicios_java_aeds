@@ -14,8 +14,7 @@ public class atividade1 {
             }
 
         }
-        // Isso esta criando como se fosse uma matriz, ou uma lista dentro de uma lista
-
+        
         entrada.close();
     }
 }
