@@ -28,9 +28,3 @@ public class Atividade8 {
         entrada.close();
     }
 }
-
-// for (int i = 0; i < vetorFrase.length; i++) {
-// if (vetorFrase[i].equals(null)) {
-// vetorFrase[i] = " ";
-// }
-// }
