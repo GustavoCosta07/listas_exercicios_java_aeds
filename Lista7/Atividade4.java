@@ -22,7 +22,6 @@ public class Atividade4 {
                 controle ++;
             }
             System.out.println("Este arquivo possui "+controle+" Linhas");
-            // aconteceu algo estranho, quando coloquei o for pra iterar com tamanho de texto.lentgh, ele ignorava o sysout
             
             
         } catch (Exception erro) {
