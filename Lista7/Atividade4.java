@@ -8,7 +8,7 @@ public class Atividade4 {
         Scanner entrada = new Scanner (System.in);
         
       
-        Path caminho = Paths.get("arquivo_questao3.txt");
+        Path caminho = Paths.get("arquivo_questao4.txt");
         try {
             byte[] texto = Files.readAllBytes(caminho);
             String leitura = new String(texto);
