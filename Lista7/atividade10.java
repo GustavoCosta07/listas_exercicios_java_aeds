@@ -18,12 +18,9 @@ public class Atividade10 {
             criarArquivo("arquivo.txt", numeros);
         }
         Arrays.sort(vetor); //isso ordena do menor para o maior
-        int media = controle /20;
-        
-        
+        float media = controle /20;
         int maior=vetor[19]; //o maior valor fica na última posição
         int menor=vetor[0]; // e o menor na primeira
-        
         System.out.println("Maior = "+maior+"\nMenor = "+menor+"\nMedia ="+media);
   
         entrada.close();

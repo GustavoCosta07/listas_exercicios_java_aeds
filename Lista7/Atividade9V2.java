@@ -8,12 +8,22 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-
-public class Atividade9 {
+public class Atividade9V2 {
     public static void main(String[] args) throws IOException {
+
+        // Loop de opcoes: ( nada é pra ser feito pelo terminal, apenas interface gráfica)
+        // Os dados podem ser salvos no arquivo txt, mas devem ser semanticos 
+        // csv - marcos,5432124,sop357peg
+        // 1 - cadastrar aluno
+        // a) nome, data de nascimento, telefone, número de registro (alphanumérico) (gerado automaticamente)
+        // 2 - mostrar aluno A) mostrar todos B) mostrar por matricula, C) filtro de acordo com o nome
+        // 3 - encerrar programa
+
+        // Aluno -> objeto (orientacao a objeto)
+
         Scanner entrada = new Scanner(System.in);
         System.out.println("Digite os dados de um aluno");
-        int continuarPrograma = 1;
+        int continuarPrograma = 1; 
         int indice = 1;
         while (continuarPrograma == 1) {
             System.out.println("Digite a matricula do " + indice + "º" + " Aluno");
