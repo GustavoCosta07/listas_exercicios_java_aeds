@@ -8,7 +8,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-
+// Rodando este programa pelo terminal do VScode não está aceitando a interface gráfica do JOptionpane
+// Tente rodar por outra ide ou pelo terminal da própria máquina
 public class Atividade9 {
     public static void main(String[] args) throws IOException {
         Scanner entrada = new Scanner(System.in);
@@ -21,7 +22,7 @@ public class Atividade9 {
             System.out.println("Digite o telefone do " + indice + "º" + " Aluno");
             String telefone = entrada.next();
             criarArquivo("dados.txt", matricula, telefone);
-            System.out.println("Deseja continuar o programa? se sim digite 1, se não digite 2");
+            System.out.println("Deseja continuar a introduzir dados de alunos? se sim digite 1, se não digite 2");
             continuarPrograma = entrada.nextInt();
             indice++;
         }
@@ -35,17 +36,16 @@ public class Atividade9 {
 
                     byte[] texto = Files.readAllBytes(caminho);
                     String leitura = new String(texto);
-                    System.out.println(leitura);
                     JOptionPane.showMessageDialog(null, leitura);
 
                 } catch (Exception erro) {
+                    System.out.println("Arquivo não encontrado");
                 }
-            } else if (verDados != 1) {
+                System.out.println("Fim de programa");
+            } else {
                 System.out.println("Fim de programa");
             }
 
-        } else {
-            System.out.println("Fim de programa");
         }
 
         entrada.close();

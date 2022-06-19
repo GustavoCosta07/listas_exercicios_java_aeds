@@ -7,9 +7,10 @@ import java.util.Scanner;
 public class Atividade8 {
     public static void main(String[] args) throws IOException {
         Scanner entrada = new Scanner (System.in);
-        
-        int quantidadeVeiculos = 200;
-        int valorAluguel = 800;
+        System.out.println("Digite a quantidade de veículos da locadora: ");
+        int quantidadeVeiculos = entrada.nextInt();
+        System.out.println("Digite o valor do aluguel dos veículos: ");
+        int valorAluguel = entrada.nextInt();
         float terco = quantidadeVeiculos/3;
         float faturamentoAnual = terco * valorAluguel * 12;
         System.out.println("O faturamento anual é de " +faturamentoAnual);
